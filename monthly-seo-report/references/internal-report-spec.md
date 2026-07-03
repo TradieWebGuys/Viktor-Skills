@@ -160,8 +160,34 @@ Reproduce the complete client-facing report content in markdown, following all s
 
 ## Formatting
 
-- Use markdown tables for all data.
+- Use standard markdown tables for all data (pipe tables with `| --- |` separator rows).
 - Use emoji indicators consistently.
 - Bold any metrics that changed more than 20% in either direction.
 - Keep the tone analytical and direct — this is for the internal team.
 - Section 11 (Proposed Client-Facing Report) uses client-facing tone — professional, positive, approachable.
+
+## ClickUp API — Critical Table Formatting Rule
+
+**MUST use `markdownDescription` parameter** (not `description`) when creating or updating tasks via the ClickUp API. Pass standard markdown pipe tables — ClickUp automatically converts them to rendered `[table-embed:]` format.
+
+**NEVER pass raw `[table-embed:...]` text** as input — ClickUp stores it as literal unrendered text.
+
+```python
+# ✅ CORRECT — standard markdown via markdownDescription
+pd_clickup_create_task(
+    ...,
+    markdownDescription="| Col1 | Col2 |\n| --- | --- |\n| A | B |"
+)
+
+# ❌ WRONG — [table-embed:] as input (renders as raw text)
+pd_clickup_create_task(
+    ...,
+    description="[table-embed:1:1 Col1 | 1:2 Col2 | 2:1 A | 2:2 B]"
+)
+
+# ❌ WRONG — plain description parameter (no markdown rendering)
+pd_clickup_create_task(
+    ...,
+    description="| Col1 | Col2 |\n| --- | --- |\n| A | B |"
+)
+```

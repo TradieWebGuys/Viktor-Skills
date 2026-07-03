@@ -6,7 +6,7 @@ Maps each scheduled report to its required integrations, ClickUp filtering logic
 
 - **Skill name**: `monthly-seo-report`
 - **Schedule**: 1st of each month, 7am AEST
-- **ClickUp filter**: Clients with `SEO` in their `🤝 Services` custom field, status set to `Active`
+- **ClickUp view**: Use the dedicated SEO Clients view `9d6k-264358` (pre-filtered for SEO service tag). Do NOT use the general Account Health Tracker view `9d6k-155558` — it does not return all clients.
 - **Account mapping**: `monthly-seo-report/references/account_mapping.json` (maps shortcodes to GSC, GA4, GBP, DataForSEO, SE Ranking IDs)
 
 ### Required integrations per client

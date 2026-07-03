@@ -31,6 +31,22 @@ Identify which report type is being audited and load the corresponding requireme
 
 Query the ClickUp Account Health Tracker (view `9d6k-155558`) to get the active client roster for the report type. Resolve each client's shortcode against the relevant account mapping file. If a client has no mapping entry, flag it immediately — that is already a failure.
 
+### Step 1.5 — Post planned roster for confirmation
+
+Before running any access checks, post the full list of clients you plan to report on to Slack. This lets the team confirm the roster is complete and catch any clients that might be missing a service tag in ClickUp.
+
+Format:
+> 📋 *Pre-report access audit — planned roster*
+> I'm about to check access for these {N} clients for the {report type} report:
+>
+> 1. {Shortcode} — {Client Name}
+> 2. {Shortcode} — {Client Name}
+> ...
+>
+> Does this look right? If anyone is missing, please add the `{service tag}` label to their Account Health Tracker task and let me know — I'll re-pull the roster.
+
+When running on cron (automated), post the roster and proceed after a 30-minute wait. If someone replies with corrections during the wait, re-pull the roster. When running manually, wait for explicit confirmation before proceeding.
+
 ### Step 2 — Run access checks
 
 For each client, run a lightweight test call against every required integration. The exact calls are in `references/access-checks.md`. Each check must:

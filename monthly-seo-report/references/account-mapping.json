@@ -70,5 +70,41 @@
     "ga4": "properties/424150299",
     "gbp_location": "4980007643370873599",
     "dataforseo": "hdklongrunroofing.co.nz"
+  },
+  "ldy": {
+    "shortcode": "LDY",
+    "name": "Leadership Dynamics",
+    "domain": "www.leadershipdynamics.com.au",
+    "gsc": "https://www.leadershipdynamics.com.au/",
+    "ga4": "properties/282352485",
+    "gbp_location": "14918558437619359193",
+    "dataforseo": "www.leadershipdynamics.com.au"
+  },
+  "slm": {
+    "shortcode": "SLM",
+    "name": "Streamline Movers",
+    "domain": "www.streamlinemovers.com.au",
+    "gsc": "https://www.streamlinemovers.com.au/",
+    "ga4": "properties/385704525",
+    "gbp_location": "14375166761816035357",
+    "dataforseo": "www.streamlinemovers.com.au"
+  },
+  "cle": {
+    "shortcode": "CLE",
+    "name": "Clean Earth Solar",
+    "domain": "www.cleanearthsolar.com.au",
+    "gsc": "https://www.cleanearthsolar.com.au/",
+    "ga4": "properties/356055287",
+    "gbp_location": "611923250726600836",
+    "dataforseo": "www.cleanearthsolar.com.au"
+  },
+  "nge": {
+    "shortcode": "NGE",
+    "name": "NE Elec",
+    "domain": "www.ngelec.com.au",
+    "gsc": "https://www.ngelec.com.au/",
+    "ga4": "properties/379507490",
+    "gbp_location": "1725254599779395786",
+    "dataforseo": "www.ngelec.com.au"
   }
 }

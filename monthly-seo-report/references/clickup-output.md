@@ -31,13 +31,15 @@ The task description contains the full internal report in this order:
 
 1. **Notable Wins section** (top) — 3 key wins marked for approval
 2. **Full internal report** — all sections from `internal-report-spec.md`
+3. **Proposed Client-Facing Report** (bottom) — the exact content proposed for the client PDF, populated with real data and positive framing. The team edits this section directly in the description before approving.
 
 ### Approval mechanism
 
 Add a checklist to the task called "Report Approval" with these items:
 - [ ] Internal report reviewed
 - [ ] Notable wins approved for marketing
-- [ ] Client-facing PDF approved for delivery
+- [ ] Proposed client-facing content reviewed and edited as needed
+- [ ] Client-facing PDF approved for generation
 
 When all checklist items are ticked, the report is approved and the client-facing PDF can be generated.
 

@@ -114,9 +114,54 @@ If a significant Google Search algorithm update was released during the reportin
 
 > ℹ️ Google released an algorithm update during this reporting period. The SEO strategy has been reviewed and adjusted accordingly.
 
+### Section 11 — Proposed Client-Facing Report
+
+This section is **mandatory** at the end of every internal report. It contains the exact content Viktor proposes to put into the client-facing PDF — already populated with real data from the current reporting period, with positive framing applied.
+
+**Purpose:** The team reviews this section directly in the ClickUp task description. They can edit wording, add commentary, remove sections, or restructure content before approving. Viktor then reads the approved text back from ClickUp (picking up all edits) and generates the PDF once, with no revisions needed.
+
+**What to include:**
+
+Reproduce the complete client-facing report content in markdown, following all sections from `client-report-spec.md`:
+
+1. Executive Summary table (positive comparisons only)
+2. Search Console — Top Pages by Clicks (URL + Clicks only)
+3. GA4 — Channel breakdown + Top Landing Pages (traffic only, positive comparisons only)
+4. Conversion Events — phone calls, email clicks, form submissions only
+5. Keywords Ranking — page 1 keywords, top 10 moving towards page 1, search volumes
+6. Backlinks Profile — Total, Referring Domains, Dofollow only
+7. GBP — calls, clicks, directions, views, reviews, posts, published pages
+8. AI/LLM Visibility — mentions, AI Overview appearances, LLM visibility
+9. Website Audit Score — overall score
+10. Next Month To-Do's — 5 key focus areas
+
+**Rules:**
+- Populate every section with real data from this reporting period — no placeholders.
+- Apply the positive-framing rule: only show period comparisons when the change is positive. Show current values without comparison for declines.
+- Do NOT include traffic-light indicators (🟢🟡🔴) — those are internal only.
+- Do NOT include CTR, position by query, spam score, toxic backlinks, or any internal-only metrics.
+- Include the CTA: "Questions about this report? Reply to this email, or contact us at Support@TradieWebGuys.com.au"
+- Include the algorithm update note if applicable.
+
+**Formatting:**
+
+```
+---
+
+## 📄 Proposed Client-Facing Report
+
+> ⚠️ REVIEW REQUIRED — The content below is what Viktor proposes to send to the client.
+> Edit directly in this description, then tick the approval checklist when ready.
+
+{Full client-facing report content here, populated with real data}
+
+---
+```
+
 ## Formatting
 
 - Use markdown tables for all data.
 - Use emoji indicators consistently.
 - Bold any metrics that changed more than 20% in either direction.
 - Keep the tone analytical and direct — this is for the internal team.
+- Section 11 (Proposed Client-Facing Report) uses client-facing tone — professional, positive, approachable.

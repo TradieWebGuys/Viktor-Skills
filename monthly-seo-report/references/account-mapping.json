@@ -1,0 +1,74 @@
+{
+  "coffison": {
+    "shortcode": "COF",
+    "name": "Coffison Plumbing",
+    "domain": "coffisonplumbing.com.au",
+    "gsc": "sc-domain:coffisonplumbing.com.au",
+    "ga4": "properties/509710062",
+    "gbp_location": "",
+    "dataforseo": "coffisonplumbing.com.au"
+  },
+  "ats": {
+    "shortcode": "ATS",
+    "name": "Affordable Tree Specialists",
+    "domain": "affordabletreespecialists.au",
+    "gsc": "sc-domain:affordabletreespecialists.au",
+    "ga4": "properties/400195350",
+    "gbp_location": "11605603903401508764",
+    "dataforseo": "affordabletreespecialists.au"
+  },
+  "spc": {
+    "shortcode": "SPC",
+    "name": "SilverPeak Construction",
+    "domain": "silverpeak.com.au",
+    "gsc": "https://www.silverpeak.com.au/",
+    "ga4": "properties/440808123",
+    "gbp_location": "5293296100465170536",
+    "dataforseo": "silverpeak.com.au"
+  },
+  "tce": {
+    "shortcode": "TCE",
+    "name": "True Connection Electrical",
+    "domain": "trueconnectionelectrical.com.au",
+    "gsc": "sc-domain:trueconnectionelectrical.com.au",
+    "ga4": "properties/355429624",
+    "gbp_location": "7158875746065551596",
+    "dataforseo": "trueconnectionelectrical.com.au"
+  },
+  "bec": {
+    "shortcode": "BEC",
+    "name": "Bolton EC",
+    "domain": "boltonec.com",
+    "gsc": "sc-domain:boltonec.com",
+    "ga4": "properties/534828724",
+    "gbp_location": "5922039704013646723",
+    "dataforseo": "boltonec.com"
+  },
+  "opg": {
+    "shortcode": "OPG",
+    "name": "OPG Services",
+    "domain": "opgservices.com.au",
+    "gsc": "https://opgservices.com.au/",
+    "ga4": "properties/524890689",
+    "gbp_location": "12851665364882980570",
+    "dataforseo": "opgservices.com.au"
+  },
+  "l4l": {
+    "shortcode": "L4L",
+    "name": "Lifts4Life",
+    "domain": "lifts4life.com.au",
+    "gsc": "sc-domain:lifts4life.com.au",
+    "ga4": "properties/374690931",
+    "gbp_location": "3884328829098821804",
+    "dataforseo": "lifts4life.com.au"
+  },
+  "hdk": {
+    "shortcode": "HDK",
+    "name": "HDK Long Run Roofing",
+    "domain": "hdklongrunroofing.co.nz",
+    "gsc": "https://www.hdklongrunroofing.co.nz/",
+    "ga4": "properties/424150299",
+    "gbp_location": "4980007643370873599",
+    "dataforseo": "hdklongrunroofing.co.nz"
+  }
+}

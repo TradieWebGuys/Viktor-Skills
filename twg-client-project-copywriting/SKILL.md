@@ -1,5 +1,5 @@
 ---
-name: twg-client-project-copywriting
+name: twg-case-study-copywriting
 description: "Writes client project gallery submissions and case studies for Tradie Web Guys (TWG) trade clients — plumbing, electrical, solar, roofing, bathroom/kitchen renovation, and other home service businesses. Use this skill whenever a case study, project gallery page, project story, or 'client win' write-up needs to be written for a TWG client's own website (not the TWG agency blog). Triggers when a user provides a completed Client Project Gallery Copywriting Brief, a filled-out project form, transcript of a client interview, or raw notes about a completed job and asks for a case study, project page, or gallery submission. Covers the full deliverable — objective, approach, challenges, solution, results, and testimonial, written in the client's own first-person voice. Always use this skill before writing any TWG case study or project gallery copy — do not write one from scratch without reading it first."
 ---
 
@@ -62,6 +62,20 @@ Don't pad to reach a bracket. If the honest story is told well in 450 words, 450
 - **Primary keyword:** roughly once every 250–300 words of body copy, used where it reads naturally (ideally once in the first paragraph, once in the H1, once in at least one subheading)
 - **Secondary keywords:** 1–2 mentions each across the piece — enough to signal relevance, not enough to feel inserted
 - Every keyword mention must attach to something specific and true about this job. A mention that exists only to hit the density target reads exactly like it was inserted for that reason — rewrite it around a real detail instead (the specific product installed, the specific room, the specific local condition).
+
+---
+
+## Keyword Scope Discipline — Earned Detail Is Not an Open Invitation to Optimise
+
+A real job always involves technical terms beyond whatever keywords were actually assigned to this page — specific products, adjacent techniques, fixtures, materials. Mentioning these accurately is exactly what the Earned Detail rule (see Writing Quality) asks for. The risk shows up when one of those incidental terms happens to also be a real, high-volume keyword — possibly one the client already targets, or plans to target, on a different, dedicated page.
+
+**Example:** a reroof case study naturally describes flashing being installed around the ridges — that's just an accurate account of the work. If "roof flashings" isn't one of *this page's* assigned primary or secondary keywords (check the keyword research supplied for this specific page — a DataForSEO export, an SEO team sheet, or the brief), it stays exactly that: one accurate, incidental mention. It doesn't get a heading, it doesn't get repeated to build density, and it isn't treated as satisfying any keyword requirement for this page — even if it's a genuinely high-volume term elsewhere in the client's keyword universe.
+
+**Rule of thumb:** only the keywords explicitly supplied for this page count toward the density and heading-placement rules above. Everything else that surfaces naturally in the story is content, not an SEO target — mention it once, accurately, and move on.
+
+**When to flag instead of silently expanding scope:** if a non-target technical term keeps pulling at a section — wanting a second or third mention, a heading of its own, a whole module built around it — that's a signal worth raising rather than solving quietly. Either the term deserves its own dedicated page and letting a case study rank for it risks cannibalising that page, or this page's assigned primary keyword doesn't actually reflect the core of the job. Flag it to the PM or SEO team and let them decide whether the target needs revisiting — don't resolve it by quietly turning an incidental detail into a second keyword for this page.
+
+**High volume is not, on its own, a reason to chase a term.** Check the intent behind it, not just the number. "Roof flashings" pulling more volume than this page's actual target doesn't make it a better keyword for a case study — it more likely reads as a product or informational search (someone researching what flashing is, or comparing materials) rather than a hire-intent search (someone looking for a business to do the job). A case study exists to prove the business can be hired for a specific service. Chasing a high-volume term with the wrong intent won't convert even if it ranks, and it drags the page's focus away from the service it's actually meant to sell. The deciding question for any adjacent term is never just "does this have volume" — it's "does this page still read as clearly about the core service being sold here, and does the term match someone looking to hire, not just look something up."
 
 ---
 
@@ -186,13 +200,14 @@ Case studies are story-first, not conversion-first — don't apply the service-p
 
 ## Internal Linking
 
-| Word Count | Internal Links |
-|---|---|
-| 400–700 | 2–3 |
-| 700–1,000 | 3–5 |
-| 1,000–1,200 | 5–7 |
+Every case study links out to **1–3 relevant pages** on the client's own website. These links must live in the body copy itself — as real anchor text the first time a service is named, usually in Our Approach — not just noted in a table for the developer to add later. A case study that never actually links anywhere hasn't done this job, even if a links table sits at the bottom.
 
-Link every named service to its dedicated service page the first time it's mentioned in a way that supports linking (usually in Our Approach). Provide an "Internal Links — Suggested" reference table at the foot of the deliverable for the developer.
+- **1 link** for a narrow, single-service job
+- **2–3 links** when the job touched multiple services, or when a closely related service (maintenance, inspections, a complementary trade) is worth pointing to even though it wasn't part of this specific job
+
+Don't limit the search for link targets to whatever service pages happen to be named in the brief. Check the client's live sitemap for the actual relevant page — service page or blog post — before defaulting to a placeholder slug. A relevant blog post (e.g. an educational piece on choosing roofing materials) is a legitimate internal link target alongside service pages, and often a better match than guessing at a service page URL that may not exist. If the right target isn't obvious from the sitemap, ask the team member who manages the site's internal linking (e.g. Viktor) rather than inventing a slug.
+
+Still add an "Internal Links — Suggested" reference table at the foot of the deliverable, but treat it as a checklist confirming what should already be linked in the text, not a substitute for linking in the text — and prefer a real, sitemap-confirmed URL over a placeholder wherever one can be found.
 
 ---
 

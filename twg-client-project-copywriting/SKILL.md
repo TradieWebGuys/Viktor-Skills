@@ -207,7 +207,9 @@ Every case study links out to **1–3 relevant pages** on the client's own websi
 
 Don't limit the search for link targets to whatever service pages happen to be named in the brief. Check the client's live sitemap for the actual relevant page — service page or blog post — before defaulting to a placeholder slug. A relevant blog post (e.g. an educational piece on choosing roofing materials) is a legitimate internal link target alongside service pages, and often a better match than guessing at a service page URL that may not exist. If the right target isn't obvious from the sitemap, ask the team member who manages the site's internal linking (e.g. Viktor) rather than inventing a slug.
 
-Still add an "Internal Links — Suggested" reference table at the foot of the deliverable, but treat it as a checklist confirming what should already be linked in the text, not a substitute for linking in the text — and prefer a real, sitemap-confirmed URL over a placeholder wherever one can be found.
+**Links must be real clickable hyperlinks in the Google Doc**, not just text mentions. Use `add_twg_hyperlink(paragraph, url, anchor_text)` from the doc builder to embed them inline — the first time a service is named in the body copy is the natural spot.
+
+Still add an "Internal Links — Suggested" reference table at the foot of the deliverable as a checklist confirming what's already linked in the text — but the table is a reference, not a substitute for the actual hyperlinks in the body.
 
 ---
 
@@ -261,6 +263,32 @@ Run through this before marking a case study done.
 - [ ] Keyword density on target (primary ~1 per 250–300 words; secondaries 1–2 each)
 - [ ] Internal links added per the word-count table
 - [ ] 2–4 CTAs placed at natural story beats, worded to match the moment
+
+---
+
+## Publishing Handoff
+
+After the case study passes the Quality Audit and is uploaded to Google Drive, hand it off for publishing:
+
+1. **Find the client's Content list** in ClickUp — named `[SHORTCODE] - Content List` (or `[SHORTCODE] - Content`) inside the client's folder in the [DELIVERY] space. Search by shortcode to locate the correct list ID.
+2. **Move the task** to that Content list using the ClickUp API (`POST /api/v2/list/{list_id}/task/{task_id}`).
+3. **Assign to both:**
+   - **Jerick Allan Dimaamo** (ClickUp ID `95447980`) — publishing
+   - **Ehtisham Haider Gilani** (ClickUp ID `48626346`) — notification/review
+4. **Set the due date** to **3 business days** from the handoff date (skip weekends; if Friday → next Wednesday).
+5. **Add a comment** on the task tagging both assignees, e.g.:
+   > 🤖 Viktor: Case study complete and uploaded to Google Drive. Ready for publishing. Assigned to Jerick and Ehtisham — due [date].
+
+---
+
+## Workspace Learnings
+
+### Doc Styling (confirmed by Amanda, July 2026)
+All copywriting deliverables should be styled .docx files — not plain markdown. Formatting:
+- **Headings:** TWG Green `#6EC066`
+- **Font:** Helvetica Neue throughout
+- **Tables:** Real Word tables with light borders (not ASCII)
+- Fix archive order: `[Content_Types].xml` must be the first ZIP entry (some viewers fail otherwise)
 
 ---
 

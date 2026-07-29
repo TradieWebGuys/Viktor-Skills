@@ -388,7 +388,7 @@ Write sections so AI answer engines can extract useful snippets.
 
 ## Internal Linking
 
-Include an internal links table at the foot of every deliverable.
+**Links must be real clickable hyperlinks in the Google Doc**, not just text mentions. Use `add_twg_hyperlink(paragraph, url, anchor_text)` from the doc builder to embed them inline in the body copy. Still include an "Internal Links — Suggested" reference table at the foot as a checklist, but the actual hyperlinks must live in the text itself.
 
 Recommended quantities:
 
@@ -405,22 +405,29 @@ Use descriptive anchor text that tells the reader what the linked page is about.
 
 ## Deliverable Format
 
-Default deliverable format depends on the user's request.
+Default deliverable is a **styled `.docx` file** using TWG branding — not plain markdown.
 
-**For document deliverables:**
+Use the reusable helper at `skills/shared_references/scripts/twg_doc_builder.py`:
 
-- Use Word paragraph styles for Heading 1, Heading 2, Heading 3, and body copy.
-- Use proper list formatting, not typed symbols.
-- Use tables for metadata, notes, and internal link suggestions.
-- Use real bold formatting for bullet lead-ins.
-- Filename format: `[Client Shortcode] - [Page Type] - [Page Name].docx`
+```python
+from skills.shared_references.scripts.twg_doc_builder import (
+    create_twg_styled_docx, add_twg_table, add_twg_bullet, add_bold_run
+)
+doc = create_twg_styled_docx()
+```
 
-**For markdown deliverables:**
+**Styling rules (see `skills/shared_references/twg-doc-styling.md`):**
 
-- Use clean markdown headings.
-- Keep metadata in a table.
-- Use clear placeholder labels for website assets.
-- Keep notes separate from public page copy.
+- All headings (H1, H2, H3) in **TWG Green `#6EC066`**, **Helvetica Neue**, bold
+- Body text in **Helvetica Neue 11pt**, black
+- Tables use green header rows (`#6EC066` background, white text) via `add_twg_table()`
+- Bullet lists via `add_twg_bullet()` with optional bold lead-in
+- Real Word paragraph styles — no manually typed symbols or ASCII formatting
+- Real bold via run properties for inline emphasis
+
+**Filename format:** `[Client Shortcode] - [Page Type] - [Page Name].docx`
+
+Upload the styled `.docx` to the client's Google Drive folder. Do not upload markdown files.
 
 ---
 
@@ -521,3 +528,9 @@ Use notes for:
 - Placeholders that require developer or client assets
 
 If no note is needed, do not add one.
+
+## SEO Claims
+
+If the copy or the brief states something as an SEO fact, verify it against `skills/seo_knowledge_base/references/seo-rules-reference.md` first. Only L1 (Google-documented) or L2 (research-backed) claims may be stated as fact — everything else is phrased as convention. Never put evidence tags or impact labels in published copy; they are internal only.
+
+Common stale claims to avoid: FAQ schema producing rich results for trade businesses (it doesn't, post-May 2026), minimum word counts being a Google requirement (they aren't — they're a TWG guideline), and schema being required for AI search visibility (it isn't).

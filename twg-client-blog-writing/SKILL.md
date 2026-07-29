@@ -305,6 +305,8 @@ piece.
 
 ## Internal Linking
 
+**Links must be real clickable hyperlinks in the Google Doc**, not just text mentions. Use `add_twg_hyperlink(paragraph, url, anchor_text)` from the doc builder to embed them inline in the body copy. Still include an "Internal Links — Suggested" reference table at the foot as a checklist.
+
 | Word Count | Internal Links |
 |---|---|
 | 500 or less | 2–3 |
@@ -314,8 +316,7 @@ piece.
 
 Blog posts default to 1,000–1,500 words, so aim for **6–10 internal
 links** as standard. Link to relevant service and location pages on the
-client's site. Provide an "Internal Links — Suggested" reference table
-at the foot of the deliverable.
+client's site.
 
 Add 1 external authoritative link where it strengthens a factual claim
 (e.g. a manufacturer spec sheet, an Australian standards body).
@@ -385,3 +386,9 @@ Don't write FAQs from memory. Before drafting:
 9. Internal Links — Suggested table included at the foot of the doc
 10. Metadata table fully completed (no blank fields)
 11. Client sign-off line present at the end of the doc
+
+## SEO Claims
+
+If the copy or the brief states something as an SEO fact, verify it against `skills/seo_knowledge_base/references/seo-rules-reference.md` first. Only L1 (Google-documented) or L2 (research-backed) claims may be stated as fact — everything else is phrased as convention. Never put evidence tags or impact labels in published copy; they are internal only.
+
+Common stale claims to avoid: FAQ schema producing rich results for trade businesses (it doesn't, post-May 2026), minimum word counts being a Google requirement (they aren't — they're a TWG guideline), and schema being required for AI search visibility (it isn't).
